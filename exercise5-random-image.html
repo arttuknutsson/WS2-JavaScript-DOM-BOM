@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 5 - Random Image</title>
+</head>
+<body>
+  <h1>Exercise 5</h1>
+  <p>Refresh page to see different image</p>
+
+  <img id="randomImg" width="420" alt="Random image">
+
+  <script>
+const images = [
+  "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=800&q=80",
+  "https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=800&q=80" 
+];
+
+    const randomIndex = Math.floor(Math.random() * images.length);
+    document.getElementById("randomImg").src = images[randomIndex];
+  </script>
+</body>
+</html>

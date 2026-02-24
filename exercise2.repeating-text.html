@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2 - Repeating Text</title>
+</head>
+<body>
+    <h1>Exercise 2</h1>
+
+    <div id="output"></div>
+
+    <script>
+      function repeatingText(text) {
+        let result = "";
+
+        for (let i = 1; i <= 30; i++) {
+          result += i + ". " + text + "<br>";
+        }
+
+        document.getElementById("output").innerHTML = result;
+      }
+
+      repeatingText("This line repeats 30 times.");
+    </script>
+</body>
+</html>
